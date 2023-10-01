@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Suite">
+  <test thread-count="3" parallel="tests" name="Test-1" >
+	  <parameter name="BROWSER" value="chrome"></parameter>
+    <classes>
+      <class name="com.Order_Module.UserMyOrdersCheckPomTest"/>
+      <class name="com.Order_Module.DeleteOrderAdminPomTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="3" parallel="tests" name="Test-2" >
+	  <parameter name="BROWSER" value="firefox"></parameter>
+    <classes>
+      <class name="com.Order_Module.UserMyOrdersCheckPomTest"/>
+      <class name="com.Order_Module.DeleteOrderAdminPomTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="3" parallel="tests" name="Test-3" >
+	  <parameter name="BROWSER" value="edge"></parameter>
+    <classes>
+      <class name="com.Order_Module.UserMyOrdersCheckPomTest"/>
+      <class name="com.Order_Module.DeleteOrderAdminPomTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

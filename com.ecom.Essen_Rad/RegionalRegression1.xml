@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="com.TestNg.SampleTest">
+		  <methods>
+			  <include name="sample1"></include>
+		  </methods>
+      </class>
+      <class name="com.TestNg.DemoTest">
+		  <methods>
+			  <include name="demo1"></include>
+		  </methods>
+      </class>
+      <class name="com.TestNg.ExampleTest">
+		  <methods>
+			  <include name="example1"></include>
+			  <include name="example2"></include>
+		  </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

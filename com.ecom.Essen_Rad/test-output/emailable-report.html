@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">TestRunner-1</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">2,490</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TestRunner-2</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">1,478</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">8</th><th class="num">0</th><th class="num">0</th><th class="num attn">8</th><th class="num">3,968</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestRunner-1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">com.TestNg.HardAssertionTest</td><td><a href="#m0">hardAssert1</a></td><td rowspan="1">1695793632921</td><td rowspan="1">14</td></tr><tr class="failedeven"><td><a href="#m1">hardAssert2</a></td><td rowspan="1">1695793632938</td><td rowspan="1">3</td></tr><tr class="failedeven"><td><a href="#m2">hardAssert3</a></td><td rowspan="1">1695793632947</td><td rowspan="1">4</td></tr><tr class="failedeven"><td><a href="#m3">hardAssert5</a></td><td rowspan="1">1695793632960</td><td rowspan="1">1</td></tr><tr><th colspan="4">TestRunner-1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.TestNg.ExecutionOrderTest</td><td><a href="#m4">test1</a></td><td rowspan="1">1695793630657</td><td rowspan="1">9</td></tr><tr class="passedeven"><td><a href="#m5">test2</a></td><td rowspan="1">1695793630677</td><td rowspan="1">2</td></tr><tr class="passedodd"><td rowspan="2">com.TestNg.HardAssertionTest</td><td><a href="#m6">hardAssert4</a></td><td rowspan="1">1695793632959</td><td rowspan="1">0</td></tr><tr class="passedodd"><td><a href="#m7">hardAssert6</a></td><td rowspan="1">1695793632962</td><td rowspan="1">1</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TestRunner-2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">com.TestNg.HardAssertionTest</td><td><a href="#m8">hardAssert1</a></td><td rowspan="1">1695793634472</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m9">hardAssert2</a></td><td rowspan="1">1695793634478</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m10">hardAssert3</a></td><td rowspan="1">1695793634483</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m11">hardAssert5</a></td><td rowspan="1">1695793634494</td><td rowspan="1">2</td></tr><tr><th colspan="4">TestRunner-2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.TestNg.ExecutionOrderTest</td><td><a href="#m12">test1</a></td><td rowspan="1">1695793633153</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m13">test2</a></td><td rowspan="1">1695793633156</td><td rowspan="1">1</td></tr><tr class="passedodd"><td rowspan="2">com.TestNg.HardAssertionTest</td><td><a href="#m14">hardAssert4</a></td><td rowspan="1">1695793634489</td><td rowspan="1">2</td></tr><tr class="passedodd"><td><a href="#m15">hardAssert6</a></td><td rowspan="1">1695793634501</td><td rowspan="1">3</td></tr></tbody>
+</table>
+<h2>TestRunner-1</h2><h3 id="m0">com.TestNg.HardAssertionTest#hardAssert1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [I] but found [S]
+	at com.TestNg.HardAssertionTest.hardAssert1(HardAssertionTest.java:16)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.TestNg.HardAssertionTest#hardAssert2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at com.TestNg.HardAssertionTest.hardAssert2(HardAssertionTest.java:24)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.TestNg.HardAssertionTest#hardAssert3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [false] but found [true]
+	at com.TestNg.HardAssertionTest.hardAssert3(HardAssertionTest.java:31)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.TestNg.HardAssertionTest#hardAssert5</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Hard assert failings
+	at com.TestNg.HardAssertionTest.hardAssert5(HardAssertionTest.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.TestNg.ExecutionOrderTest#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.TestNg.ExecutionOrderTest#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.TestNg.HardAssertionTest#hardAssert4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.TestNg.HardAssertionTest#hardAssert6</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestRunner-2</h2><h3 id="m8">com.TestNg.HardAssertionTest#hardAssert1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [I] but found [S]
+	at com.TestNg.HardAssertionTest.hardAssert1(HardAssertionTest.java:16)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.TestNg.HardAssertionTest#hardAssert2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at com.TestNg.HardAssertionTest.hardAssert2(HardAssertionTest.java:24)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.TestNg.HardAssertionTest#hardAssert3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [false] but found [true]
+	at com.TestNg.HardAssertionTest.hardAssert3(HardAssertionTest.java:31)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.TestNg.HardAssertionTest#hardAssert5</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Hard assert failings
+	at com.TestNg.HardAssertionTest.hardAssert5(HardAssertionTest.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.TestNg.ExecutionOrderTest#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.TestNg.ExecutionOrderTest#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.TestNg.HardAssertionTest#hardAssert4</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.TestNg.HardAssertionTest#hardAssert6</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

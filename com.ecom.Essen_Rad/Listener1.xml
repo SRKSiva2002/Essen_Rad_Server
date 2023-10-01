@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+	<listeners>
+		<listener class-name="com.Essan_Rad.GenericUtils.ListenerImplementationClass"></listener>
+		<listener class-name="com.Essan_Rad.GenericUtils.IAnnotationImpClass"></listener>
+	</listeners>
+	<test thread-count="1" parallel="tests" name="Test">
+		<classes>
+			<class name="com.Menu_Module.AddMenuPomTest" />
+			<class name="com.Order_Module.UserMyOrdersCheckPomTest" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
